@@ -1,0 +1,37 @@
+{
+  "name": "friend-connect",
+  "version": "0.6.9",
+  "description": "",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --es-module-specifier-resolution=node ./test/index.js",
+    "test-n-build": "npm run build && npm run test",
+    "publish": "npm run build && npm publish --access public "
+  },
+  "author": "minerj101",
+  "license": "GLPv3",
+  "dependencies": {
+    "bedrock-protocol": "^3.18.0",
+    "dotenv": "^16.0.1",
+    "prismarine-auth": "^1.5.4",
+    "unirest": "^0.6.0",
+    "websocket": "^1.0.34"
+  },
+  "repository": "https://github.com/minerj101/FriendConnect",
+  "keywords": [
+    "bedrock",
+    "mcpe",
+    "mcbe",
+    "geyser",
+    "minecraft",
+    "java",
+    "friend-connect"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/websocket": "^1.0.5",
+    "ts-node": "^10.8.1"
+  }
+}
